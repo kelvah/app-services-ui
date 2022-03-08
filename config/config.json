@@ -29,6 +29,11 @@
       "basePath": "/mas-local-fm/cos",
       "proxyTarget": "http://localhost:9002",
       "fallbackBasePath": "/beta/apps/cos-ui-build"
+    },
+    "openbridge": {
+      "basePath": "/mas-local-fm/openbridge",
+      "proxyTarget": "http://localhost:9006",
+      "fallbackBasePath": "/beta/apps/openbridge-ui-build"
     }
   },
   "config": [
@@ -73,7 +78,8 @@
               "module": "./config"
             }
           }
-        }
+        },
+        "openbridge": {}
       }
     },
     {
@@ -116,7 +122,8 @@
               "module": "./config"
             }
           }
-        }
+        },
+        "openbridge": {}
       }
     },
     {
@@ -159,7 +166,8 @@
               "module": "./config"
             }
           }
-        }
+        },
+        "openbridge": {}
       }
     }
   ]

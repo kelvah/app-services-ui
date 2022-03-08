@@ -16,6 +16,7 @@ import { BasenameContext } from '@rhoas/app-services-ui-shared';
 import { AppServicesLoading } from '@rhoas/app-services-ui-components';
 import { useTranslation } from 'react-i18next';
 import { Button } from '@patternfly/react-core';
+import OpenBridgePage from "@app/pages/OpenBridgePage/OpenBridgePage";
 
 const QuickStartLoaderFederated = React.lazy(() => import('@app/pages/Resources/QuickStartLoaderFederated'));
 
@@ -73,6 +74,15 @@ const appRoutes: AppRouteConfig<any>[] = [
     title: 'Streams for Apache Kafka | Red Hat OpenShift Application Services',
     basename: '/streams/kafkas',
     devPreview: false,
+  },
+  {
+    component: OpenBridgePage,
+    exact: true,
+    label: 'OpenBridge',
+    path: '/openbridge',
+    title: 'OpenBridge | Red Hat OpenShift Application Services',
+    basename: `${getBaseName(window.location.pathname)}/openbridge`,
+    devPreview: true,
   },
   {
     component: ServiceRegistryPage,
