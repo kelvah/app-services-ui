@@ -16,7 +16,7 @@ import { BasenameContext } from '@rhoas/app-services-ui-shared';
 import { AppServicesLoading } from '@rhoas/app-services-ui-components';
 import { useTranslation } from 'react-i18next';
 import { Button } from '@patternfly/react-core';
-import OpenBridgePage from "@app/pages/OpenBridgePage/OpenBridgePage";
+import SmartEventsPage from "@app/pages/SmartEventsPage/SmartEventsPage";
 
 const QuickStartLoaderFederated = React.lazy(() => import('@app/pages/Resources/QuickStartLoaderFederated'));
 
@@ -76,12 +76,12 @@ const appRoutes: AppRouteConfig<any>[] = [
     devPreview: false,
   },
   {
-    component: OpenBridgePage,
+    component: SmartEventsPage,
     exact: true,
-    label: 'OpenBridge',
-    path: '/openbridge',
-    title: 'OpenBridge | Red Hat OpenShift Application Services',
-    basename: `${getBaseName(window.location.pathname)}/openbridge`,
+    label: 'SmartEvents',
+    path: '/smartevents',
+    title: 'SmartEvents | Red Hat OpenShift Application Services',
+    basename: `${getBaseName(window.location.pathname)}/smartevents`,
     devPreview: true,
   },
   {

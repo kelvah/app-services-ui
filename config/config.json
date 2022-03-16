@@ -30,10 +30,10 @@
       "proxyTarget": "http://localhost:9002",
       "fallbackBasePath": "/beta/apps/cos-ui-build"
     },
-    "openbridge": {
-      "basePath": "/mas-local-fm/openbridge",
+    "smartevents": {
+      "basePath": "/mas-local-fm/smartevents",
       "proxyTarget": "http://localhost:9006",
-      "fallbackBasePath": "/beta/apps/openbridge-ui-build"
+      "fallbackBasePath": "/beta/apps/smartevents-ui-build"
     }
   },
   "config": [
@@ -79,7 +79,7 @@
             }
           }
         },
-        "openbridge": {}
+        "smartevents": {}
       }
     },
     {
@@ -123,7 +123,7 @@
             }
           }
         },
-        "openbridge": {}
+        "smartevents": {}
       }
     },
     {
@@ -167,7 +167,7 @@
             }
           }
         },
-        "openbridge": {}
+        "smartevents": {}
       }
     }
   ]
