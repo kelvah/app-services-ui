@@ -77,7 +77,7 @@ const appRoutes: AppRouteConfig<any>[] = [
   },
   {
     component: SmartEventsPage,
-    exact: true,
+    exact: false,
     label: 'SmartEvents',
     path: '/smartevents',
     title: 'SmartEvents | Red Hat OpenShift Application Services',
